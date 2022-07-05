@@ -1,0 +1,57 @@
+facing = a donde apunta E|W|N|S
+postion = donde está x,y
+comandos = b|f|l|r
+steps = 1
+si estas mirando al este y abanzas incrementar la x
+si estas mirando al oeste y abanzas decrementar la x
+si estas mirando al norte y abanzas incrementar el y
+si estas mirando al sur y abanzas decrementar el y 
+
+
+- evaluar la existencia del comandos
+    - Facing = E ,x = 0, y = 0, comando = ''
+        resultado: comando inexistente o consultar a producto
+    - Facing = E ,x = 0, y = 0, comando = prueba
+        resultado: comando inexistente o consultar a producto
+
+    - Facing = E ,x = 0, y = 0, comando = b
+        resultado: Facing = E, x = -1 , y = 0
+    - Facing = E ,x = 0, y = 0, comando = f
+        resultado: Facing = E, x = 1 , y = 0
+    - Facing = E ,x = 0, y = 0, comando = l
+        resultado: Facing = N, x = 0 , y = 0
+    - Facing = E ,x = 0, y = 0, comando = r
+        resultado: Facing = S, x = 0 , y = 0
+    
+    - Facing = N, x = 0, y = 0, comando = f
+        resultado: Facing = N, x = 0 , y = 1
+    - Facing = N, x = 0, y = 0, comando = b
+        resultado: Facing = N, x = 0 , y = -1
+    - Facing = N, x = 0, y = 0, comando = l
+        resultado: Facing = W, x = 0 , y = 0
+    - Facing = N, x = 0, y = 0, comando = r
+        resultado: Facing = E, x = 0 , y = 0
+    
+    - Facing = S, x = 0, y = 0, comando = f
+        resultado: Facing = S, x = 0 , y = -1
+    - Facing = S, x = 0, y = 0, comando = b
+        resultado: Facing = S, x = 0 , y = 1
+    - Facing = S, x = 0, y = 0, comando = l
+        resultado: Facing = E, x = 0 , y = 0
+    - Facing = S, x = 0, y = 0, comando = r
+        resultado: Facing = W, x = 0 , y = 0
+    
+    - Facing = W, x = 0, y = 0, comando = f
+        resultado: Facing = W, x = -1 , y = 0
+    - Facing = W, x = 0, y = 0, comando = b
+        resultado: Facing = S, x = 0 , y = 1
+    - Facing = W, x = 0, y = 0, comando = l
+        resultado: Facing = S, x = 0 , y = 0
+    - Facing = W, x = 0, y = 0, comando = r
+        resultado: Facing = N, x = 0 , y = 0
+        
+
+- ser estrictos con el casesensitive en los comandos
+- 
+
+
